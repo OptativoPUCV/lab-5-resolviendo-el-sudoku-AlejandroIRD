@@ -90,3 +90,19 @@ list.h:17:7: note: expected 'List * {aka struct List *}' but argument is of type
        ^~~~
 cc1.exe: all warnings being treated as errors
 c2702fc
+Sat, May 17, 2025  4:09:10 PM: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:126:5: error: invalid use of void expression
+     Node* aux = (Node*) pop(stack);
+     ^~~~
+sudoku.c:133:24: error: dereferencing pointer to incomplete type 'List {aka struct List}'
+     Node* current = adj->first;
+                        ^~
+sudoku.c:136:24: error: 'Node {aka struct <anonymous>}' has no member named 'next'
+       current = current->next;
+                        ^~
+5e86dea

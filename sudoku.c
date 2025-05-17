@@ -130,10 +130,10 @@ Node* DFS(Node* initial, int* cont){
       return aux;
     }
     List* adj = get_adj_nodes(aux);
-    Node* current = first(adj);
+    Node* current = adj->first;
     while (current != NULL){
       push(stack, current->sudo);
-      current = next(current);
+      current = current->next;
     }
     free(adj);
     free(current);
