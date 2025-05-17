@@ -1,8 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "list.h"
-#include "list.c"
 
+typedef struct n{
+    void* data;
+    struct n* next;
+    struct n* prev;
+} node;
+
+struct List{
+    node* first;
+    node* last;
+    node* current;
+    int size;
+};
 
 typedef struct{
    int sudo[9][9];
@@ -149,7 +160,6 @@ Node* DFS(Node* initial, int* cont){
 
 
 
-/*
 int main( int argc, char *argv[] ){
 
   Node* initial= read_file("s12a.txt");;
@@ -160,4 +170,4 @@ int main( int argc, char *argv[] ){
   print_node(final);
 
   return 0;
-}*/
+}

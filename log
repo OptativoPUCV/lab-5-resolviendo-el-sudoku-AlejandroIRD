@@ -313,3 +313,15 @@ C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:178: multip
 C:\Users\aleja\AppData\Local\Temp\cceKzdX7.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:178: first defined here
 collect2.exe: error: ld returned 1 exit status
 85bd3ce
+Sat, May 17, 2025  4:27:20 PM: 
+ sudoku.c | 16 +++++++++++++---
+ 1 file changed, 13 insertions(+), 3 deletions(-)
+Compilation failed
+test.c:245:5: error: redefinition of 'main'
+ int main( int argc, char *argv[] ) {
+     ^~~~
+In file included from test.c:5:0:
+sudoku.c:163:5: note: previous definition of 'main' was here
+ int main( int argc, char *argv[] ){
+     ^~~~
+104520d
