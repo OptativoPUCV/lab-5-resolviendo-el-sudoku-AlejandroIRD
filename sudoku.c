@@ -51,9 +51,7 @@ int is_valid(Node* n){
     for (j = 0; j < 9; j++){
       int valor = n->sudo[i][j];
       if (valor != 0){
-        if (index[valor] == 1){
-          return 0;
-        }
+        if (index[valor] == 1) return 0;
         index[valor] = 1;
       }
     }
@@ -64,9 +62,7 @@ int is_valid(Node* n){
     for (i = 0; i < 9; i++){
       int valor = n->sudo[i][j];
       if (valor != 0){
-        if (index[valor] == 1){
-          return 0;
-        }
+        if (index[valor] == 1) return 0;
         index[valor] = 1;
       }
     }
@@ -80,9 +76,7 @@ int is_valid(Node* n){
         int col = j + k % 3;
         int valor = n->sudo[fila][col];
         if (valor != 0){
-          if (index[valor] == 1){
-            return 0;
-          }
+          if (index[valor] == 1) return 0;
           index[valor] = 1;
         }
       }
@@ -104,17 +98,11 @@ List* get_adj_nodes(Node* n){
       }
     }
   }
-  if (fila == -1){
-    return list;
-  }
+  if (fila == -1) return list;
   for(int valor = 1; valor <= 9; valor++){
     Node* NueNodo = copy(n);
     NueNodo->sudo[fila][col] = valor;
-    if (is_valid(NueNodo)){
-      pushBack(list, NueNodo);
-    } else{
-      free(NueNodo);
-    }
+    is_valid(NueNodo) ? pushBack(list, NueNodo): free(NueNodo);
   }
   return list;
 }
