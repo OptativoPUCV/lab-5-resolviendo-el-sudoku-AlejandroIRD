@@ -72,3 +72,21 @@ Sat, May 17, 2025  3:52:46 PM:
  tests:  7|1
 total_score: 55/70
 e046025
+Sat, May 17, 2025  4:04:07 PM: 
+ sudoku.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:126:5: error: invalid use of void expression
+     Node* aux = (Node*) pop(stack);
+     ^~~~
+sudoku.c:136:22: error: passing argument 1 of 'next' from incompatible pointer type [-Werror=incompatible-pointer-types]
+       current = next(current);
+                      ^~~~~~~
+In file included from test.c:4:0:
+list.h:17:7: note: expected 'List * {aka struct List *}' but argument is of type 'Node * {aka struct <anonymous> *}'
+ void* next(List* list);
+       ^~~~
+cc1.exe: all warnings being treated as errors
+c2702fc
