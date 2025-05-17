@@ -71,7 +71,7 @@ int is_valid(Node* n){
       }
     }
   }
-
+  // submatrices
   for (i = 0; i < 9; i += 3){
     for (j = 0; j < 9; i += 3){
       int index[10] = {0};
