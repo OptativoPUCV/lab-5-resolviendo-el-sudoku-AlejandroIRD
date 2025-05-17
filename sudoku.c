@@ -77,7 +77,7 @@ int is_valid(Node* n){
       int index[10] = {0};
       for (k = 0; k < 9; k++){
         int fila = i + k /3;
-        int col = j + k /3;
+        int col = j + k % 3;
         int valor = n->sudo[fila][col];
         if (valor != 0){
           if (index[valor] == 1){
