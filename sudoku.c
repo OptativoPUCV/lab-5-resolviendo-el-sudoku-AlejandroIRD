@@ -123,14 +123,18 @@ Node* DFS(Node* initial, int* cont){
   push(stack, initial);
   while (!is_empty(stack)){
     (*cont)++;
-    Node* aux = (Node*) pop(stack);
+    Node* aux = (Node*) top(stack);
+    pop(stack);
+
     if (is_final(aux)){
       clean(stack);
       free(stack);
       return aux;
     }
+
     List* adj = get_adj_nodes(aux);
     Node* current = adj->first;
+
     while (current != NULL){
       push(stack, current->sudo);
       current = current->next;

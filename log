@@ -106,3 +106,16 @@ sudoku.c:136:24: error: 'Node {aka struct <anonymous>}' has no member named 'nex
        current = current->next;
                         ^~
 5e86dea
+Sat, May 17, 2025  4:12:46 PM: 
+ sudoku.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:136:24: error: dereferencing pointer to incomplete type 'List {aka struct List}'
+     Node* current = adj->first;
+                        ^~
+sudoku.c:140:24: error: 'Node {aka struct <anonymous>}' has no member named 'next'
+       current = current->next;
+                        ^~
+62498c7
