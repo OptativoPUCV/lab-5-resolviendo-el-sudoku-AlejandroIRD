@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "list.h"
+#include "list.c"
 
 
 typedef struct{
@@ -133,10 +134,10 @@ Node* DFS(Node* initial, int* cont){
     }
 
     List* adj = get_adj_nodes(aux);
-    Node* current = adj->first;
+    node* current = adj->first;
 
     while (current != NULL){
-      push(stack, current->sudo);
+      push(stack, current->data);
       current = current->next;
     }
     free(adj);

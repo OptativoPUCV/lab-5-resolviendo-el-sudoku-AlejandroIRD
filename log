@@ -119,3 +119,69 @@ sudoku.c:140:24: error: 'Node {aka struct <anonymous>}' has no member named 'nex
        current = current->next;
                         ^~
 62498c7
+Sat, May 17, 2025  4:15:15 PM: 
+ sudoku.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+Compilation failed
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `get_size':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:19: multiple definition of `get_size'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:19: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `clean':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:23: multiple definition of `clean'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:23: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `createList':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:28: multiple definition of `createList'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:28: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `createStack':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:36: multiple definition of `createStack'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:36: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `createNode':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:40: multiple definition of `_createNode'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:40: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `is_empty':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:49: multiple definition of `is_empty'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:49: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `popFront':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:53: multiple definition of `popFront'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:53: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `popBack':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:64: multiple definition of `popBack'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:64: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `pushFront':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:75: multiple definition of `pushFront'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:75: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `pushBack':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:88: multiple definition of `pushBack'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:88: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `pushCurrent':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:101: multiple definition of `pushCurrent'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:101: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `popCurrent':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:115: multiple definition of `popCurrent'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:115: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `pop':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:127: multiple definition of `pop'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:127: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `front':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:132: multiple definition of `front'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:132: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `first':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:144: multiple definition of `first'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:144: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `next':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:148: multiple definition of `next'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:148: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `last':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:156: multiple definition of `last'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:156: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `top':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:164: multiple definition of `top'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:164: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `prev':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:168: multiple definition of `prev'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:168: first defined here
+C:\Users\aleja\AppData\Local\Temp\ccxHIa3w.o: In function `push':
+C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:178: multiple definition of `push'
+C:\Users\aleja\AppData\Local\Temp\ccaFNMxE.o:C:\Users\aleja\LAB 5\lab-5-resolviendo-el-sudoku-AlejandroIRD/list.c:178: first defined here
+collect2.exe: error: ld returned 1 exit status
+01fc051
